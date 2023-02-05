@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revamp</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="shortcut icon" href="./images/the revamp agency black 2.png" type="image/x-icon">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <head>
+        <nav class="mx-10 md:mx-20  my-10 flex justify-between items-center">
+            <a href="./index.html"><img src="./images/the revamp agency black 2.png" alt="logo" class="w-40 md:w-52 "></a>
+            <ul data-aos="fade-left" data-aos-duration="700" class="hidden md:flex font-normal text-2xl">
+                <li class="mr-16"><a href="./about.html" class="hover:underline ">Our Services</a></li>
+                <li class="mr-16"><a href="./team.html" class="hover:underline ">Team</a></li>
+                <li class="mr-16"><a href="#" class="hover:underline ">Work</a></li>
+                <li><a href="./contact.html" class="font-semibold">Contact Us</a></li>
+            </ul>
+            <img src="./images/menu-4-line.svg" alt="menu" id="hamburger" data-aos="fade-left" data-aos-duration="700" class="w-10 md:hidden">
+            <img src="./images/close-fill.svg" alt="menu" id="close" class="w-10 hidden md:hidden">
+            
+        </nav>
+        <!-- collaspe menu -->
+        <section id="collapsed-menu" class="hidden md:hidden bg-[#000000]  text-white text-left absolute z-40 w-full">
+            <ul class="px-10 py-6">
+                <li class="mb-4"><a href="./about.html" class="font-normal text-xl ">Our services</a></li>
+                <li class="mb-4"><a href="./team.html" class="font-normal text-xl">Team</a></li>
+                <li class="mb-4"><a href="#" class="font-normal text-xl">Work</a></li>
+                <li><a href="./contact.html" class="font-normal text-xl">Contact Us</a></li>
+            </ul>
+        </section> 
+
+      
+    </head>
+
+    <section class="md:flex justify-between mx-10 md:mx-20 mt-36">
+        <div  data-aos="fade-right"
+        data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="mt-8 md:mt-0 md:mr-24">
+            <h1 class="text-2xl md:text-4xl  font-semibold mb-4">Let's chat.</h1>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-4">Tell us about your projects,</h1>
+            <p class="text-xl hidden md:block font-normal">Let's create something together</p>
+            <!-- <p class="mt-2 text-xl font-light"><a href="">Email: tomiwa@therevampagency.com</a></p> -->
+        </div>
+        <div data-aos="fade-right"
+        data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="mt-10 md:mt-0 md:mr-24">
+            <h1 class="font-semibold hidden md:block mb-8 text-4xl">Send us a message</h1>
+            <form action="sendmail" method="post">
+                <label class="block">
+                    <input type="text" name="name" placeholder="full name" class="mt-2 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-zinc-500 focus:ring-zinc-500 block w-full rounded-md sm:text-sm focus:ring-1">
+                    <input type="email" name="email" placeholder="Email address" class="mt-4 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-zinc-500 focus:ring-zinc-500 block w-full rounded-md sm:text-sm focus:ring-1">
+                    <input type="text" name="message" placeholder="Tell us about your project" class="my-4 px-3 pt-4 pb-36 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-zinc-500 focus:ring-zinc-500 block w-full rounded-md sm:text-sm focus:ring-1">
+                    <button data-aos="fade-right"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="text-white bg-[#111111] py-2 px-4 rounded-md">Submit</button>
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <section class="mx-10 mb-4 mt-16 md:mt-24 md:mx-20 font-semibold text-xl md:flex justify-between">
+        <p class="mb-12">&#169; 2023 REVAMP</p>
+        <div>
+            <a href="https://instagram.com/therevampagency?igshid=YmMyMTA2M2Y=" target="_blank" class="underline mr-12">Instagram</a>
+            <a href="" class="underline">Email</a>
+        </div>
+    </section>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
