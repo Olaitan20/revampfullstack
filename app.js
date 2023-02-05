@@ -7,9 +7,9 @@ const app = express();
 
 if (app.get('env') !== 'production') {
   require('dotenv').config();
-  app.use(require('morgan')('dev'));
 }
 
+app.use(require('morgan')('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
