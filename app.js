@@ -39,8 +39,6 @@ app.post('/sendmail', async (req, res) => {
   } catch (err) {
     return res.redirect(500, '/contact.html');
   }
-
-
 });
 
 module.exports = app;
