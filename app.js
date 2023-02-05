@@ -37,6 +37,7 @@ app.post('/sendmail', async (req, res) => {
 
     return res.redirect('/contact.html');
   } catch (err) {
+    console.log(err);
     return res.redirect(500, '/contact.html');
   }
 });
